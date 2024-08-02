@@ -1,8 +1,7 @@
 import { Router } from "express"
+import { postGuitar } from "../controllers/guitars"
 
 const router = Router()
-router.post("/", (req, res) => {
-  res.status(201).send("Made new guitar!")
-})
+router.post("/", postGuitar)
 
 export default router
